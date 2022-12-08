@@ -1,0 +1,71 @@
+{
+   "type":"sdk_answer",
+   "items":[
+      {
+         "card":{
+            "type":"workflow",
+            "payload":{
+               "success":true,
+               "body":{
+                  "result":"SUCCESS",
+                  "pid":"80c30504-e9ac-4f63-9d9c-f31cce9f5ae5",
+                  "flow":"DSNWidgetSandbox",
+                  "state":"widgets",
+                  "output":{
+                     "screens":[
+                        {
+                           "title":"Виджеты",
+                           "type":"DSNScreen",
+                           "header":[
+                              {
+                                 "type":"CoreNavBar",
+                                 "title":"Виджеты",
+                                 "events":[
+                                    {
+                                       "cmd":"EXIT",
+                                       "title":"На предыдущий экран",
+                                       "description":"Переход на предыдущий экран"
+                                    }
+                                 ]
+                              }
+                           ],
+                           "widgets":[
+                              {
+                                 "type":"CoreRange",
+                                 "properties":{
+                                    "prefix":"",
+                                    "suffix":" руб",
+                                    "step":100,
+                                    "minValue":0,
+                                    "maxValue":10000
+                                 },
+                                 "fields":[
+                                    {
+                                       "id":"credit:sum:1",
+                                       "value":"1000",
+                                       "type":"text",
+                                       "title":"Выбор суммы вклада 2"
+                                    }
+                                 ]
+                              },
+                           "footer":[
+                              {
+                                 "type":"CoreButtons",
+                                 "events":[
+                                    {
+                                       "uri":"nav:next",
+                                       "title":"Продолжить",
+                                       "description":"Переход на следующий экран"
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               }
+            }
+         }
+      }
+   ]
+}
