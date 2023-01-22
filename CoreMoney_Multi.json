@@ -1,0 +1,271 @@
+{
+  "type": "sdk_answer",
+  "items": [
+    {
+      "card": {
+        "type": "workflow",
+        "payload": {
+         
+    "success": true,
+    "body": {
+        "result": "SUCCESS",
+        "pid": "80c30504-e9ac-4f63-9d9c-f31cce9f5ae5",
+        "flow": "DemoCoreMoney",
+        "state": "state0",
+        "output": {
+            "screens": [
+                {
+                    "title": "CoreMoney",
+                    "header": [
+                        {
+                            "type": "CoreNavBar",
+                            "title": "CoreMoney",
+                            "events": [
+                                {
+                                    "cmd": "EXIT"
+                                }
+                            ]
+                        }
+                    ],
+                    "widgets": [
+                        {
+                            "type": "CoreMoney",
+                            "title": "Введите сумму",
+                            "description": "Ввод суммы и валюты для перевода денежки",
+                            "fields": [
+                                {
+                                    "id": "amount0",
+                                    "value": "5000",
+                                    "style": "noicon_with_underline",
+                                    "type": "text",
+                                    "format": "decimal",
+                                    "title": "Сумма перевода",
+                                    "validators": [
+                                        {
+                                            "type": "minValue",
+                                            "value": "0.01",
+                                            "message": "Сумма перевода должна быть больше нуля"
+                                        },
+                                        {
+                                            "type": "maxValue",
+                                            "value": "50000",
+                                            "message": "Сумма перевода не может превышать 50 000 руб."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "currency0",
+                                    "value": "RUB",
+                                    "type": "select",
+                                    "referenceId": "currencies1",
+                                    "title": "Выберите валюту",
+                                    "validators": [
+                                        {
+                                            "type": "required",
+                                            "value": "",
+                                            "message": "Поле обязательно для заполнения"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "CoreMoney",
+                            "title": "Введите сумму",
+                            "description": "Ввод суммы и валюты для перевода денежки",
+                            "fields": [
+                                {
+                                    "id": "amount1",
+                                    "value": "5000",
+                                    "style": "noicon_with_underline",
+                                    "type": "text",
+                                    "format": "decimal",
+                                    "title": "Сумма перевода",
+                                    "validators": [
+                                        {
+                                            "type": "minValue",
+                                            "value": "0.01",
+                                            "message": "Сумма перевода должна быть больше нуля"
+                                        },
+                                        {
+                                            "type": "maxValue",
+                                            "value": "50000",
+                                            "message": "Сумма перевода не может превышать 50 000 руб."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "currency1",
+                                    "value": "RUB",
+                                    "type": "select",
+                                    "referenceId": "currencies2",
+                                    "title": "Выберите валюту",
+                                    "validators": [
+                                        {
+                                            "type": "required",
+                                            "value": "",
+                                            "message": "Поле обязательно для заполнения"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "CoreMoney",
+                            "title": "Введите сумму",
+                            "description": "Ввод суммы и валюты для перевода денежки",
+                            "fields": [
+                                {
+                                    "id": "amount2",
+                                    "value": "5000",
+                                    "style": "noicon_with_underline",
+                                    "type": "text",
+                                    "format": "decimal",
+                                    "title": "Сумма перевода",
+                                    "validators": [
+                                        {
+                                            "type": "minValue",
+                                            "value": "0.01",
+                                            "message": "Сумма перевода должна быть больше нуля"
+                                        },
+                                        {
+                                            "type": "maxValue",
+                                            "value": "50000",
+                                            "message": "Сумма перевода не может превышать 50 000 руб."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "currency2",
+                                    "value": "RUB",
+                                    "type": "select",
+                                    "referenceId": "currencies3",
+                                    "title": "Выберите валюту",
+                                    "validators": [
+                                        {
+                                            "type": "required",
+                                            "value": "",
+                                            "message": "Поле обязательно для заполнения"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "CoreMoney",
+                            "title": "Введите сумму",
+                            "description": "Ввод суммы и валюты для перевода денежки",
+                            "fields": [
+                                {
+                                    "id": "amount3",
+                                    "value": "5000",
+                                    "style": "noicon_with_underline",
+                                    "type": "text",
+                                    "format": "decimal",
+                                    "title": "Сумма перевода",
+                                    "validators": [
+                                        {
+                                            "type": "minValue",
+                                            "value": "0.01",
+                                            "message": "Сумма перевода должна быть больше нуля"
+                                        },
+                                        {
+                                            "type": "maxValue",
+                                            "value": "50000",
+                                            "message": "Сумма перевода не может превышать 50 000 руб."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "currency3",
+                                    "value": "RUB",
+                                    "type": "select",
+                                    "referenceId": "currencies4",
+                                    "title": "Выберите валюту",
+                                    "validators": [
+                                        {
+                                            "type": "required",
+                                            "value": "",
+                                            "message": "Поле обязательно для заполнения"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "references": {
+                "currencies1": {
+                    "properties": {},
+                    "items": [
+                        {
+                            "title": "Российский рубль",
+                            "value": "RUB"
+                        }
+                    ]
+                },
+                "currencies2": {
+                    "properties": {},
+                    "items": [
+                        {
+                            "title": "Российский рубль",
+                            "value": "RUB"
+                        },
+                        {
+                            "title": "Доллар США",
+                            "value": "USD"
+                        }
+                    ]
+                },
+                "currencies3": {
+                    "properties": {},
+                    "items": [
+                        {
+                            "title": "Российский рубль",
+                            "value": "RUB"
+                        },
+                        {
+                            "title": "Доллар США",
+                            "value": "USD"
+                        },
+                        {
+                            "title": "Евро",
+                            "value": "EUR"
+                        }
+                    ]
+                },
+                "currencies4": {
+                    "properties": {},
+                    "items": [
+                        {
+                            "title": "Российский рубль",
+                            "value": "RUB"
+                        },
+                        {
+                            "title": "Доллар США",
+                            "value": "USD"
+                        },
+                        {
+                            "title": "Евро",
+                            "value": "EUR"
+                        },
+                        {
+                            "title": "Казахстанский тенге",
+                            "value": "KZT"
+                        }
+                    ]
+                }
+            }
+        
+    }
+}
+
+              }
+            
+          }
+        }
+      
+    
+  ]
+}
